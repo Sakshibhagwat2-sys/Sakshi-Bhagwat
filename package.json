@@ -1,0 +1,23 @@
+{
+  "name": "sakshi-bhagwat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakshibhagwat2-sys/Sakshi-Bhagwat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sakshibhagwat2-sys/Sakshi-Bhagwat/issues"
+  },
+  "homepage": "https://github.com/Sakshibhagwat2-sys/Sakshi-Bhagwat#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  }
+}

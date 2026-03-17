@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-color: #f682f6;
+            display: flex;
+            justify-content:center;
+            align-content:center;
+            height:100vh;  
+        }
+        form container{
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px rgb(red, green, blue);
+
+
+        }
+        h2{
+           text-align: center;
+           margin-bottom: 20px;
+           }
+
+           input, select{
+                width: 100%;
+                padding: 8px;
+                margin: 8px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+             }
+
+           button{
+              width: 100%;
+              padding: 10px;
+              background-color: #0077ff;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+
+          button:hover{
+              background-color: #005fcc;
+      }
+
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration form</h2>
+        <form>
+
+        <label >Full  Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" placeholder="enter your password">
+
+        <label>course</label>
+        <select>
+            <option>MCA</option>
+            <option>BSC</option>
+            <option>BCA</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        </form>
+        </div>
+</body>
+</html>

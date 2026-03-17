@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .mobile:valid+div{
+            display: none;
+        }
+        .mobile:invalid+div{
+            display: block;
+            color: red;
+        }
+        .username:valid+div{
+            display: none;
+        }
+        .username:invalid+div{
+            display: block;
+            color: red;
+        }
+        .mobile:invalid{
+            border: 2px  solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        .mobile:valid{
+            border: 2px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+
+    </style>
+</head>
+<body>
+    <form >
+        <dl>
+            <dt>User name</dt>
+            <dd><input type="text" name="username" class="username" required>
+             <div>User Name is required</div>
+            
+            </dd>
+            <dt>Your mobile</dt>
+            <dd>
+                <input type="text" class="mobile"  placeholder="eg:+(1)(425) 555-0100" pattern="\+\(1\)\(\d\{3}\)\s\d{3}-\d{4}" name="str">
+                  <div>Invalid Format: Us mobile formate +(1)(425) 555-0100</div>
+            </dd>
+        </dl>
+        <button>search</button>
+    </form>
+</body>
+</html>

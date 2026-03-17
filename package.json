@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Sakshibhagwat2-sys/Sakshi-Bhagwat#readme",
   "dependencies": {
-    "bootstrap-icons": "^1.13.1"
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "jquery": "^4.0.0"
   }
 }

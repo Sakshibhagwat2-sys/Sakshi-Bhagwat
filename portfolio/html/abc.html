@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-          function abc(){
+          function xyz(){
+            fetch()
+            .then(function(a){
+                for(var i=0; i<data.length; i++){
+                    tr=document.createElement("tr");
 
-            fetch().then(function(responce){
-                    return responce.json();
+                    id=document.createElement("td");
+                    id.innerText=data[i].id;
+                    document.querySelector("tbody").appendChild(tr).appendChild(id);
+
+                    document.querySelector("tbody").appendChild(tr).appendChild(id);
+
+                    title=document.createElement("td");
+                    title.innerHTML=data[i].title;
+                    document.querySelector("tbody").appendChild(tr).appendChild(title);
+
+                    url=document.createElement("td");
+                    
+                    img=document.createElement("img");
+                    img.src=data[i].thumbnailUrl;
+                    document.querySelector("tbody").appendChild(tr).appendChild(url).appendChild(img);
+                    
+                }
             })
-            .then(functon(data))
-            {
-                abc(data.title);  
-            }
+
           
 
           }
     </script>
 </head>
-<body>
+<body onload="xyz()">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>url</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="tr">
+
+            </tr>
+        </tbody>
+    </table>
     
     <div id="abc">abc</div>
 </body>
